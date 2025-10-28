@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Hunter - Selección de nivel</title>
+
+    <!-- resetea estilos -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- hoja de estilos -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- script principal (orquestador) -->
+    <script type="module" src="../js/main.js" defer></script>
+  </head>
+
+  <body data-sh-page="welcome">
+    <h1>✨ Star Hunter 🚀</h1>
+    <!-- Contenedor del selector de niveles -->
+    <main class="levels-container">
+      <section class="levels">
+        <button class="level" data-level="facil">
+          <img src="../img/facil.png" alt="Nivel fácil: tablero pequeño y más tiempo">
+          <p>Fácil</p>
+        </button>
+
+        <button class="level" data-level="intermedio">
+          <img src="../img/intermedio.png" alt="Nivel intermedio: tablero medio">
+          <p>Intermedio</p>
+        </button>
+
+        <button class="level" data-level="dificil">
+          <img src="../img/dificil.png" alt="Nivel difícil: tablero grande y menos tiempo">
+          <p>Difícil</p>
+        </button>
+      </section>
+      <!-- Instrucciones del juego -->
+      <section class="instruction">
+        <h2>Cómo jugar</h2>
+      <p>En Star Hunter deberás recolectar todas las estrellas antes de que el tiempo se agote. Cada nivel cambia el tamaño del tablero y la cantidad de estrellas. ¡Selecciona tu nivel de dificultad para empezar!</p>
+      </section>
+    </main>
+    <!-- Footer de la pagina -->
+    <footer>&#169; Jabier Zurro Aduriz. DWEC 03 TE 02</footer>
+  </body>
+</html>

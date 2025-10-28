@@ -1,0 +1,24 @@
+[   
+   {
+      "id":1,
+      "nombre" : "Iker",
+      "apellido" : "Arana",
+      "usuario":"iarana",
+      "contrasenia":"1234Abcd"
+   },
+   {
+      "id":2,
+      "nombre" : "Ander",
+      "apellido" : "Goikoetxea",
+      "usuario":"agoikoetxea",
+      "contrasenia":"5678Efgh"
+   },
+
+   {
+      "id":3,
+      "nombre" : "Jokin",
+      "apellido" : "Olano",
+      "usuario":"jolano",
+      "contrasenia":"9012Ijkl"
+   }
+]

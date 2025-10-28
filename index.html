@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Star Hunter - Login</title>
+
+        <!-- resetea estilos -->
+        <link rel="stylesheet" href="./css/normalize.css">
+        <!-- hoja de estilos -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- script principal. Con defer nos aseguramos de que la pagina se cargue antes de que se ejecute el script -->
+        <script type="module" src="./js/main.js" defer></script>
+    </head>
+    <!-- cuerpo de la pagina -->
+    <body data-sh-page="login">
+        <h1>✨ Star Hunter! 🚀</h1>
+        <!-- seccion centrar donde aparece el formulario de login -->
+        <main>
+            <form id="login-form">
+                <h2>Login</h2>
+                <p><b>¡Bienvenido a tu juego favorito!</b></p>
+
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <span id="mensajePassword" class="hidden">
+                    Utiliza al menos 6 caracteres alfanuméricos.
+                    Los siguientes caracteres no son válidos: %&$#€?¿!¡
+                </span>
+                <br>
+
+                <button type="submit">ENTRAR</button>
+            </form>
+            <!-- Mensaje oculto que se muestra a traves de JS -->
+            <div id="mensajeError" class="hidden">
+                ⚠️ El usuario no está registrado
+            </div>
+            <!-- Mensaje oculto que se muestra a traves de JS -->
+            <div id="mensajeContrasenia" class="hidden">
+                ⚠️ La contraseña no es correcta
+            </div>
+        </main>
+        <!-- Footer de la pagina -->
+        <footer>&#169 Jabier Zurro Aduriz. DWEC 03 TE 02</footer>
+    </body>
+</html>

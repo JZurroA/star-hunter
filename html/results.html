@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Star Hunter - Resultados</title>
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../js/main.js" defer></script>
+  </head>
+
+  <body data-sh-page="results">
+    <h1>✨ Star Hunter 🚀</h1>
+
+    <main class="results-layout">
+      <section class="results-card" aria-labelledby="results-title">
+        <h2 id="results-title">Resultados</h2>
+
+        <p id="result-status" class="result-status">
+          <!-- Victoria / Derrota (lo pondrá el JS dinamicamente) -->
+          Resultado pendiente
+        </p>
+
+        <dl class="results-list">
+          <div>
+            <dt>Puntuación</dt>
+            <dd id="result-score">0</dd>
+          </div>
+          <div>
+            <dt>Tiempo empleado (segundos)</dt>
+            <dd id="result-time">0</dd>
+          </div>
+          <div>
+            <dt>Nivel</dt>
+            <dd id="result-level">-</dd>
+          </div>
+          <div>
+            <dt>Estrellas explosivas</dt>
+            <dd id="result-explosives">0</dd>
+          </div>
+        </dl>
+
+        <!-- botones de reiniciar y salir. Redirigira dinamicamente con JS -->
+        <div class="results-actions">
+          <button id="btn-restart" class="btn-primary">Reiniciar</button>
+          <button id="btn-exit" class="btn-secondary">Salir</button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer de la pagina -->
+    <footer>&#169 Jabier Zurro Aduriz. DWEC 03 TE 02</footer>
+  </body>
+</html>

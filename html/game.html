@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Star Hunter - Juego</title>
+
+        <!-- estilos -->
+        <link rel="stylesheet" href="../css/normalize.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+
+        <!-- orquestador -->
+        <script type="module" src="../js/main.js" defer></script>
+    </head>
+
+    <body data-sh-page="game">
+        <h1>✨ Star Hunter 🚀</h1>
+
+        <main class="game-layout">
+        <!-- barra de métricas -->
+            <section class="stats" aria-label="Indicadores de partida">
+                <div class="stat">
+                    <span class="stat-label">Tiempo</span>
+                    <output id="stat-time" aria-live="polite">0</output>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Estrellas Explosivas</span>
+                    <output id="stat-explosives" aria-live="polite">0</output>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Puntos</span>
+                    <output id="stat-score" aria-live="polite">0</output>
+                </div>
+            </section>
+            <div id="mode-warning" class="warning hidden" role="status" aria-live="polite">
+                ¡MODO DOBLE ACTIVADO!
+            </div>
+
+            <section class="play-and-rules">
+                <!-- zona de juego -->
+                <section class="play-area" aria-labelledby="board-title">
+                    <h2 id="board-title" class="visually-hidden">Zona de juego</h2>
+                    <!-- usa <canvas> o un contenedor dinámico; tú eliges -->
+                    <div id="board" role="application" aria-label="Tablero"></div>
+                </section>
+
+                <!-- reglas -->
+                <aside class="rules" aria-labelledby="rules-title">
+                    <h2 id="rules-title">Reglas del juego:</h2>
+                    <!-- Aqui apareceran las reglas segun el nivel seleccionado. El texto se modifica dinamicamente con JS -->
+                    <ul>
+                        <li></li>
+                        <li>.</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <!-- Boton de empezar el juego -->
+                    <button id="btn-start" class="btn-primary">EMPEZAR</button>
+                </aside>
+            </section>
+        </main>
+        <!-- footer de la pagina -->
+        <footer>&#169 Jabier Zurro Aduriz. DWEC 03 TE 02</footer>
+    </body>
+</html>
