@@ -27,7 +27,7 @@ if (document.body.dataset.shPage === 'login') {
     const passInput       = document.getElementById('password')
     const msgPass         = document.getElementById('mensajePassword')
     const msgError        = document.getElementById('mensajeError')
-    const msgContrasenia  = document.getElementById('mensajeContrasenia') // <-- añade este div en el HTML
+    const msgContrasenia  = document.getElementById('mensajeContrasenia')
 
     form.addEventListener('submit', (e) => {
         e.preventDefault()
@@ -170,4 +170,5 @@ if (document.body.dataset.shPage === 'results') {
         StatsService.clear()
         window.location.href = '../index.html'
     })
+
 }
